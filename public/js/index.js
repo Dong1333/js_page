@@ -71,11 +71,10 @@ studentEmail.onclick = () => {
 
   // 이메일 형식이 알파벳+숫자@알파벳+숫자.알파벳+숫자 형식이 아닐경우
 
-  if (exptext.test(inputStudentEmail)==false){
-    alert("이메일 형식이 올바르지 않습니다.");
+  if (exptext.test(inputStudentEmail)==false) {
+    alert('이메일 형식이 올바르지 않습니다.');
     return false;
-	};
-
+  }
   localStorage.setItem('inputStudentEmail', inputStudentEmail);
 
   setStudentEmailInnerHtml(inputStudentEmail);
